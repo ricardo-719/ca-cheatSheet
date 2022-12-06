@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Tailwind Cheatsheet</title>
+</head>
+<body>
+    <p>
+        In this assignment I am supposed to create a cheatsheet for a particular coding 
+        feature I have chosen to cover the topic of creating an awesome button 
+        using Tailwind CSS
+    </p>
+    <p>
+        For the implementation of this assignment I have to use a table in HTML. In this table
+        I will cover a step by step instructive to create an amazing button.
+    </p>
+    <h1>Tailwind Button Instructions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Description</th>
+                <th>Notes & References</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Link Tailwin to the HTML</td>
+                <td>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Create a button container div and set to:</td>
+                <td>absolute with left top and translate x and y as needed</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Inside create another div containing an anchor for the button:</td>
+                <td>p-4 py-24 px-40 border-4 text-slate-900 border-slate-900</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Add additional format to that div for hover:</td>
+                <td>hover:text-white hover:after:translate-x-full</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Include for formating using after:</td>
+                <td>after:absolute after:bg-slate-900 after:right-full after:top-0 after:w-full after:h-full</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Hide the overflow and add smoothness to the transition:</td>
+                <td>after:duration-300 overflow-hidden</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Give the Button a tag like this:</td>
+                <td>&lt;h3 class="relative z-20 text-center"&gt;Sign as Anonymous&lt;/h3&gt;</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Example code snippet:</h1>
+    <div class="codesnippet">
+        <pre><code>
+            &lt;div class="absolute left-1/2 top-1/4 -translate-x-1/2 -translate-y-1/2">
+            &lt;div>&lt;a href="/feed" class=" p-4 py-24 px-40 border-4 text-slate-900 border-double border-slate-900 hover:text-white
+            after:absolute after:bg-slate-900 after:right-full after:top-0 after:w-full after:h-full
+            hover:after:translate-x-full after:duration-300 overflow-hidden">
+            &lt;h3 class="relative z-20 text-center">Sign as Anonymous</h3>
+            &lt;/a>&lt;/div>
+            &lt;/div>
+        </code></pre>
+    </div>
+</body>
+</html>
